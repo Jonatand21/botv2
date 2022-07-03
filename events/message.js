@@ -1,8 +1,8 @@
 module.exports = (client, message) => {
     if (message.author.bot || message.channel.type === 'dm') return;
     const prefix = client.config.discord.prefix;
-    msg = message.content.toLowerCase;
-    if (msg.indexOf(prefix.toLowerCase) !== 0 && msg.indexOf(".alla") !== 0) return;
+    msg = message.content.toLowerCase();
+    if (msg.indexOf(prefix) !== 0) return;
 
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
