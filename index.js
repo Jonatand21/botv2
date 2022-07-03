@@ -11,6 +11,8 @@ client.emotes = client.config.emojis;
 client.filters = client.config.filters;
 client.commands = new discord.Collection();
 client.Ginfo = [];
+client.config.discord.prefix = processs.env.PREFIX;
+client.config.discord.token = processs.env.token;
 
 fs.readdirSync('./commands').forEach(dirs => {
     const commands = fs.readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));

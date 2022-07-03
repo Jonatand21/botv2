@@ -10,9 +10,8 @@ module.exports = {
     },
 
     discord: {
-        prefix: processs.env.PREFIX,
-        activity: 'The best music bot in the world',
-        token: process.env.TOKEN/*OTgxNjMyNjcyMjAxODM4NjY0.GXeLt1.eiDFJ4zbezltrKIjDWCpNaTsYj3LVGfC__K0uk*/ 
+        
+        activity: 'The best music bot in the world'
     },
 
     filters: ['8D', 'gate', 'haas', 'phaser', 'treble', 'tremolo', 'vibrato', 'reverse', 'karaoke', 'flanger', 'mcompand', 'pulsator', 'subboost', 'bassboost', 'vaporwave', 'nightcore', 'normalizer', 'surrounding'],
