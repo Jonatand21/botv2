@@ -10,7 +10,7 @@ module.exports = {
     },
 
     discord: {
-        prefix: processs.env.PREFIX,
+        prefix: process.env.PREFIX,
         activity: 'The best music bot in the world',
         token: process.env.TOKEN
     },
