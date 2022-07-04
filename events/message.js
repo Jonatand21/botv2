@@ -4,6 +4,7 @@ module.exports = (client, message) => {
     msg = message.content.toLowerCase();
     console.log(msg.indexOf(prefix));
     console.log(msg);
+    console.log(prefix);
     if (msg.indexOf(prefix) !== 0) return;
 
 
