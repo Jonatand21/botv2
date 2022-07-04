@@ -2,6 +2,8 @@ module.exports = (client, message) => {
     if (message.author.bot || message.channel.type === 'dm') return;
     const prefix = client.config.discord.prefix;
     msg = message.content.toLowerCase();
+    console.log(msg.indexOf(prefix));
+    console.log(msg);
     if (msg.indexOf(prefix) !== 0) return;
 
 
