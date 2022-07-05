@@ -3,6 +3,7 @@ module.exports = {
     aliases: [],
     category: 'fun',
     utilisation: '{prefix}spam',
+    admin:true,
   async execute(client,message,args) {
     finns = false;
     index = 0;

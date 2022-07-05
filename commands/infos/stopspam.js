@@ -4,6 +4,7 @@ module.exports = {
     aliases: [],
     category: 'fun',
     utilisation: '{prefix}stopspam',
+    admin:true,
   async execute(client,message,args) {
     finns = false;
     index = 0;

@@ -38,4 +38,6 @@ for (const file of player) {
 client.login(client.config.discord.token);
 
 
-  
+process.on('unhandledRejection', error => {
+	console.error('Unhandled promise rejection:', error);
+});

@@ -14,7 +14,7 @@ module.exports = {
           dis = '';
           nummer = 1;
           for(i = 0;i<Guilds.length;i++){
-            dis +=   i + ": " + Guilds[i] + "\n";
+            dis +=   (i+1) + ": " + Guilds[i] + "\n";
             }
           stopembed
               .setDescription(dis);
