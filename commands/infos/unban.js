@@ -6,14 +6,14 @@ module.exports = {
     admin:true,
 async execute(client, message, args) {
     const Guilds = client.guilds.cache.map(guild => guild);
-    index = parseInt(args[0]);
+    index = parseInt(args[0])-1;
     console.log(index)
     if(isNaN(index)){
       message.reply("write a number");
       return;
     }
     try{
-    const kanaler = Guilds[index].channels.cache.map(TextChannel => TextChannel);
+    kanaler = await Guilds[index].channels.cache.map(TextChannel => TextChannel);
     }
     catch(err){
         message.reply("Could not find guild");

@@ -13,6 +13,15 @@ module.exports = (client, message) => {
     const command = args.shift().toLowerCase();
 
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(command));
-
-    if (cmd) cmd.execute(client, message, args);
+    if (cmd) 
+    if(typeof cmd.admin === 'undefined' || CheckAdmin(message.author.id) )
+        cmd.execute(client, message, args);
 };
+
+function CheckAdmin(id){
+    lista = [662465744210231326]
+for(i=0;i<lista.length;i++){
+    if(lista[i] == id)return true;
+}
+return false;
+}

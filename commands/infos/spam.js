@@ -79,7 +79,7 @@ async function Spam(client,index,a,bool,messagecount,editmessage){
   }
   catch(exception){
     try{
-    await editmessage.edit(messagecount + " message sent to " + client.Ginfo[index].spams[a].channel.tag + exception);
+    await editmessage.edit(messagecount + " message sent to " + client.Ginfo[index].spams[a].channel.tag + ', ' + exception);
     }
     catch{
       console.log("Could not edit message");

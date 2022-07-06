@@ -14,7 +14,7 @@ module.exports = {
             message.channel.send({
                 embed: {
                     color: 'BLACK',
-                    author: { name: 'banes HELP PANNEL' },
+                    author: { name: 'HELP PANNEL' },
                     footer: { text: 'Created by Jonatand21' },
                     fields: [
                         { name: 'Music commands', value: music },
@@ -32,7 +32,7 @@ module.exports = {
             message.channel.send({
                 embed: {
                     color: 'BLACK',
-                    author: { name: 'banes HELP PANNEL' },
+                    author: { name: 'HELP PANNEL' },
                     footer: { text: 'Created by Jonatand21' },
                     fields: [
                         { name: 'Command name', value: command.name, inline: true },
