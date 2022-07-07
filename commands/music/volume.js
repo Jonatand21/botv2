@@ -13,7 +13,7 @@ module.exports = {
 
         if (!args[0] || isNaN(args[0]) || args[0] === 'Infinity') return message.channel.send(`${client.emotes.error} - Please enter a valid number !`);
 
-        if (Math.round(parseInt(args[0])) < 1 || Math.round(parseInt(args[0])) > 100) return message.channel.send(`${client.emotes.error} - Please enter a valid number (between 1 and 100) !`);
+        if (Math.round(parseInt(args[0])) < 1 || Math.round(parseInt(args[0])) > 100000) return message.channel.send(`${client.emotes.error} - Please enter a valid number (between 1 and 100000) !`);
 
         const success = client.player.setVolume(message, parseInt(args[0]));
 

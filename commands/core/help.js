@@ -21,7 +21,7 @@ module.exports = {
                         { name: 'Other commands', value: infos },
                     ],
                     timestamp: new Date(),
-                    description: `In order to use the banes bot, use the prefix "banes" flollowed by the command name. To get help on a-Specific command dm the devloper.`,
+                    description: `In order to use this bot, use the prefix "${client.config.discord.prefix}" followed by the command name. To get help on a-Specific command dm the devloper.`,
                 },
             });
         } else {
